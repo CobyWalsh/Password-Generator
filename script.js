@@ -14,7 +14,7 @@ function writePassword() {
   var includeUppercase = confirm("Click OK to confirm including uppercase characters. Click cancel if you don't want uppercase characters");
   var includeNumbers = confirm("Click OK to confirm including numeric characters. Click cancel if you don't want numbers characters");
   var includeSpecial = confirm("Click OK to confirm including special characters. Click cancel if you don't want special characters");
-  rcase
+  
   while (!(includeLowercase || includeUppercase || includeNumbers || includeSpecial)) {
     alert("You must select at least one character type.");
     includeLowercase = confirm("Click OK to confirm including lowercase characters.");
@@ -30,7 +30,7 @@ function writePassword() {
   var specialChars = "!@#$%^&*()_+~`|}{[]:;?><,./-=";
   var passwordChars = "";
   var password = "";
-
+  // This section of code using the if statement tells the program which character to use based on what the user chooses
   if (includeLowercase) {
     passwordChars += lowercaseChars;
   }
@@ -48,8 +48,9 @@ function writePassword() {
     password += passwordChars.charAt(Math.floor(Math.random() * passwordChars.length));
   }
 
-  // Display password in alert
-  alert("Your generated password is: " + password);
+  // Displays password in the text box
+  var passwordText = document.querySelector("#password");
+  passwordText.value = password;
 
 }
 
