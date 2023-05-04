@@ -2,9 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!--This is the veiwport meta tag that allows the webpage to adjust to different screen sizes-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Password Generator</title>
+    <!--Here I linked this HTML to my CSS code-->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -12,11 +14,13 @@
       <header>
         <h1>Password Generator</h1>
       </header>
+      <!--This div element contains the card that contains the password generator-->
       <div class="card">
         <div class="card-header">
           <h2>Generate a Password</h2>
         </div>
         <div class="card-body">
+          <!--This is the textarea element, it displays teh generated password. It is set to readonly so the user cannot edit the text. The placeholder text tells the user what it is for-->
           <textarea
             readonly
             id="password"
@@ -25,10 +29,12 @@
           ></textarea>
         </div>
         <div class="card-footer">
+          <!--This button element is used to trigger the password generator process-->
           <button id="generate" class="btn">Generate Password</button>
         </div>
       </div>
     </div>
+    <!--This tag links this HTML code to the JavaScript code-->
     <script src="script.js"></script>
   </body>
 </html>
