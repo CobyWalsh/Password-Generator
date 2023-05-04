@@ -3,7 +3,7 @@
 *::after {
   box-sizing: border-box;
 }
-
+/*This sets the height to 100% and removes all margin and padding from the HTML, body, and .wrapper elements*/
 html,
 body,
 .wrapper {
@@ -11,7 +11,7 @@ body,
   margin: 0;
   padding: 0;
 }
-
+/*The body font is set to sans-serif with a background color of #f9fbfd*/
 body {
   font-family: sans-serif;
   background-color: #f9fbfd;
@@ -87,7 +87,7 @@ header {
   text-align: center;
   cursor: pointer;
 }
-
+/*Styles the behavior of the disable button. It disbles the cursor to the default value so the cursor will not change when it hovers over. The background color is set to #c0c7cf*/
 button[disabled] {
   cursor: default;
   background: #c0c7cf;
@@ -96,7 +96,7 @@ button[disabled] {
 .float-right {
   float: right;
 }
-
+/*This section removes the default appearance of the input on some browsers with the -webkit-appearance, -moz-appearance, and the appearance properties. It also removes the border property and sets the width of the container to 100%. The resize and overflow propertis disable the resizing of the input field and hide any overflow that may occur*/
 #password {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -117,7 +117,7 @@ button[disabled] {
   resize: none;
   overflow: hidden;
 }
-
+/*This media query sets the font size of the buttons an dthe password text area to 1rem and also adds margin and padding to the button, this makes sure it still looks good on smaller screens*/
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
@@ -129,7 +129,7 @@ button[disabled] {
     font-size: 1rem;
   }
 }
-
+/*This media query applies a font size of 0.8 to the buttons on screens that are 500 pixels wide or less*/
 @media (max-width: 500px) {
   .btn {
     font-size: 0.8rem;
